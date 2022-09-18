@@ -6,17 +6,18 @@ public class Bread
     private double salt;
     private double sugar;
     private double yeast;
-    private String type;
+    private String breadName;
     private String recipe;
     private boolean state;
-    public Bread(double flour, double water, double salt, double sugar, double yeast, String type, String recipe, boolean state)
+    
+    public Bread(double flour, double water, double salt, double sugar, double yeast, String breadName, String recipe, boolean state)
     {
         this.flour = flour;
         this.water = water;
         this.salt = salt;
         this.sugar = sugar;
         this.yeast = yeast;
-        this.type = type;
+        this.breadName = breadName;
         this.recipe = recipe;
         this.state = state;
     }
@@ -67,13 +68,13 @@ public class Bread
         this.yeast = yeast;
     }
   
-    public String getType()
+    public String getBreadName()
     {
-        return type;
+        return breadName;
     }
-    public void setType(String type)
+    public void setBreadName(String breadName)
     {
-        this.type = type;
+        this.breadName = breadName;
     }
 
     public String getRecipe()
@@ -96,7 +97,8 @@ public class Bread
 
     public void bakeState(boolean state)
     {
-        if (state == true){
+        if (state == true)
+        {
             System.out.println("The bread is baked");
         }
         else
@@ -107,13 +109,13 @@ public class Bread
     }
     public String getIngredients()
     {
-        return (flour + " cups of flour\n" + water + " cups of water\n" + salt + " tsps of salt\n" + yeast + " tsps of yeast");
+        return (flour + " cups of flour + water + " cups of water " + salt + " tsps of salt\n" + yeast + " tsps of yeast");
     }
 
     
     public String toString()
     {
         return "cups of flour: " + flour + "cups of water: " + water + "tablespoons of salt: " + salt + "tablespoons of yeast: " + yeast + "cups of sugar: " + sugar
-                + "type of bread: " + type + "recipe: " + recipe + "cooked or not cooked: " + state;
+                + "Bread Name: " + breadName + "recipe: " + recipe + "cooked or not cooked: " + state;
     }
 }
