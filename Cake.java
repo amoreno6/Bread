@@ -6,7 +6,7 @@ public class Cake extends Bread
     
     public cake(double flour, double water, double salt, double sugar, double yeast, String type, String recipe, boolean state, double milk, int eggs, int vanillaExtract)
     {
-        super(flour, water, salt, sugar, yeast, type, recipe, state);
+        super(flour, water, salt, sugar, yeast, breadName, recipe, state);
         this.milk = milk;
         this.eggs = eggs;
         this.vanillaExtract = vanillaExtract;
