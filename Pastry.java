@@ -4,7 +4,7 @@ public class pastry extends Bread
     private int creamCheese;
     private int fruit;
     
-    public pastry(double flour, double water, double salt, double sugar, double yeast, String type, String recipe, boolean state, int butter, int creamCheese, int fruit)
+    public pastry(double flour, double water, double salt, double sugar, double yeast, String breadName, String recipe, boolean state, int butter, int creamCheese, int fruit)
     {
         
         super(flour, water, salt, sugar, yeast, breadName, recipe, state);
