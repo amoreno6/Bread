@@ -116,6 +116,6 @@ public class Bread
     
     public String toString()
     {
-        return "Cups of flour: " + flour + "Cups of water: " + water + "Tablespoons of salt: " + salt + "Tablespoons of yeast: " + yeast + "Cups of sugar: " + sugar + "Bread Name: " + breadName + "Baked or not Baked: " + state + "Recipe: " + recipe;
+        return "Cups of flour: " + flour + "Cups of water: " + water + "Tablespoons of salt: " + salt + "Tablespoons of yeast: " + yeast + "Cups of sugar: " + sugar + "Bread Name: " + breadName + "Recipe: " + recipe + "Baked?: " + state;
     }
 }
