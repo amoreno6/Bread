@@ -21,7 +21,7 @@ public class SourdoughBread extends Bread
     public String getRecipe()
     {
         return ("The recipe for a sourdough bread: "
-        + "1: Mix flour, water, salt, baking powder, yeast, and ripe sourdough starter."
+        + "1: Mix flour, water, salt, yeast, and ripe sourdough starter."
         + "2: Make the dough."
         + "3: Bulk rise."
         + "4: Stretch and fold the dough."
@@ -31,8 +31,9 @@ public class SourdoughBread extends Bread
         + "8: Bake the bread at 400 F for 20 minutes, until deep golden brown."
         + "9: Remove the bread from the oven and let the bread cool until ready to eat.");
     }
-    // The ingredient methodd for the sourdough bread
-    public String getIngredients(){
-        return("The ingredients for the Sourdough Bread: "+ super.getIngredients() + sourdoughStarter + " cup of ripe sourdough starter");
+    
+    public String getIngredients()
+    {
+        return("The ingredients for Sourdough Bread: "+ super.getIngredients() + sourdoughStarter + " Cups of ripe sourdough starter");
     }
 }
