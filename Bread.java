@@ -10,7 +10,7 @@ public class Bread
     private boolean state;
     private String recipe;
     
-    public Bread(double flour, int water, int salt, int sugar, int yeast, String breadName, boolean state, String recipe)
+    public Bread(double flour, double water, double salt, double sugar, double yeast, String breadName,String recipe, boolean state)
     {
         this.flour = flour;
         this.water = water;
@@ -18,9 +18,8 @@ public class Bread
         this.sugar = sugar;
         this.yeast = yeast;
         this.breadName = breadName;
-        this.state = state;
         this.recipe = recipe;
-        
+        this.state = state;
     }
   
     public double getFlour()
@@ -32,39 +31,39 @@ public class Bread
         this.flour = flour;
     }
   
-    public int getWater()
+    public double getWater()
     {
         return water;
     }
-    public void setWater(int water)
+    public void setWater(double water)
       
     {
         this.water = water;
     }
   
-    public int getSalt()
+    public double getSalt()
     {
         return salt;
     }
-    public void setSalt(int salt)
+    public void setSalt(double salt)
     {
         this.salt = salt;
     }
   
-    public int getSugar()
+    public double getSugar()
     {
         return sugar;
     }
-    public void setSugar(int sugar)
+    public void setSugar(double sugar)
     {
         this.sugar = sugar;
     }
     
-    public int getYeast()
+    public double getYeast()
     {
         return yeast;
     }
-    public void setYeast(int yeast)
+    public void setYeast(double yeast)
     {
         this.yeast = yeast;
     }
@@ -78,6 +77,15 @@ public class Bread
         this.breadName = breadName;
     }
 
+    public String getRecipe()
+    {
+        return recipe;
+    }
+    public void setRecipe(String recipe)
+    {
+        this.recipe = recipe;
+    }
+      
     public boolean getState()
     {
         return state;
@@ -87,15 +95,6 @@ public class Bread
         this.state = state;
     }
  
-    public String getRecipe()
-    {
-        return recipe;
-    }
-    public void setRecipe(String recipe)
-    {
-        this.recipe = recipe;
-    }
-   
     public void bakeState(boolean state)
     {
         if (state == true)
@@ -108,6 +107,7 @@ public class Bread
 
         }
     }
+ 
     public String getIngredients()
     {
         return (flour + " Cups of flour + water + " Cups of water " + salt + " Tablespoons of salt " + yeast + " Tablespoons of yeast");
@@ -116,7 +116,6 @@ public class Bread
     
     public String toString()
     {
-        return "Cups of flour: " + flour + "Cups of water: " + water + "Tablespoons of salt: " + salt + "Tablespoons of yeast: " + yeast + "Cups of sugar: " + sugar
-                + "Bread Name: " + breadName + "Baked or not Baked: " + state + "Recipe: " + recipe;
+        return "Cups of flour: " + flour + "Cups of water: " + water + "Tablespoons of salt: " + salt + "Tablespoons of yeast: " + yeast + "Cups of sugar: " + sugar + "Bread Name: " + breadName + "Baked or not Baked: " + state + "Recipe: " + recipe;
     }
 }
