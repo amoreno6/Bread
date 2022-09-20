@@ -7,7 +7,7 @@ public class Strudel extends Bread
     private double milk;
     private int eggs;
     
-    public pastry(double flour, double water, double salt, double sugar, double yeast, String type, String recipe, boolean state, int butter, String fruit, int fruitAmt, double cinnamon, double milk, int eggs)
+    public pastry(double flour, double water, double salt, double sugar, double yeast, String breadName, String recipe, boolean state, int butter, String fruit, int fruitAmt, double cinnamon, double milk, int eggs)
     {
         super(flour, water, salt, sugar, yeast, type, recipe, state);
         this.butter = butter;
