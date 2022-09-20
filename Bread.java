@@ -99,11 +99,11 @@ public class Bread
     {
         if (state == true)
         {
-            System.out.println("The bread is baked");
+            System.out.println("The" + breadName + "is now baked");
         }
         else
         {
-            System.out.println("The bread is not baked");
+            System.out.println("The" + breadName + "is not baked");
 
         }
     }
