@@ -1,4 +1,4 @@
-public class cake extends Bread
+public class Cake extends Bread
 {
     private double milk;
     private int eggs;
