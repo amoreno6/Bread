@@ -4,24 +4,14 @@ public class pastry extends Bread
     private int creamCheese;
     private String fruit;
     
-    public pastry(double flour, double water, double salt, double sugar, double yeast, String breadName, String recipe, boolean state, int butter, int creamCheese, String fruit)
+    public pastry(double flour, double water, double salt, double sugar, double yeast, String breadName, String recipe, boolean state, int creamCheese, String fruit)
     {
         
         super(flour, water, salt, sugar, yeast, breadName, recipe, state);
-        this.butter = butter;
         this.creamCheese = creamCheese;
         this.fruit = fruit;
     }
    
-    public int getButter() 
-    {
-        return butter;
-    }
-
-    public void setButter(int butter) 
-    {
-        this.butter = butter;
-    }
     public int getCreamCheese() 
     {
         return creamCheese;
@@ -54,5 +44,5 @@ public class pastry extends Bread
       
       public String getIngredients()
       {
-        return "The ingredients of this pastry: "+ butter + " tablespoons of butter "+ creamCheese + " ounces of cream cheese " + fruit + " cups of fruit of choice" + super.getIngredients();
+        return "The ingredients of this pastry: " + creamCheese + " ounces of cream cheese " + fruit + " cups of fruit of choice" + super.getIngredients();
       }
